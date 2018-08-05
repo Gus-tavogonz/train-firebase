@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> <!---RESET-STYLESHEET-CHANGES MARGINS AND BOLDNESS OF THE TYPE ON CHROME-->
+    <!--Bootstrap!!!-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--JAVASCRIPT BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+   
+    
+    <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+
+   
+    <!--LINK TO CSS by GUS.TAVO-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <title>Where to now?</title>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted  class="fullscreen-bg__video" id="background">
+            
+                <source src="./assets/video/video.mp4" type="video/mp4">
+    
+            </video>
+            <div class="container" style="height:400px;">
+               
+                
+        </div>
+    </div>
+
+
+    <div class="body">
+    <div class="container header">
+        <div class="row">
+
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+            <h1 class="title"> Where to Now?</h1>
+            </div>
+
+            <div class="col-md-3"></div>
+            
+        </div>
+    </div>
+    
+
+
+
+    <div class="container mb-5 mt-5">
+            <div class="row">
+                <h1>Current Trains</h1>
+            </div>
+            <table class="table" id="train-values">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+    </div>
+
+
+    <!--Get user input-->
+    <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">    
+               <form>
+                    <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Train Name</label>
+                            <input type="text" class="form-control" placeholder="Add a Train" rows="1" id="get-train"></input>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Destination</label>
+                            <input type="text" class="form-control" placeholder="Add a Destination" rows="1" id="get-destination"></input>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="exampleFormControlTextarea1">First Train Time</label>
+                            <input type="text" class="form-control" placeholder="Add the time of the first train (military time)" rows="1" id="get-first-train"></input>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Frequency</label>
+                            <input type="text" class="form-control" placeholder="Add the frequency of each train (minutes)" rows="1" id="get-frequency"></input>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="start">Submit</button>
+
+                </form>
+                </div>
+        <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">    
+               <form>
+              
+                </form>
+                </div>
+        <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+
+    
+</div>
+
+  
+    
+
+    <!--FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js">    
+    </script>
+
+    <!--JAVASCRIPT APP-->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    
+</body>
+</html>
